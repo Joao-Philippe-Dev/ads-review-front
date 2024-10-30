@@ -10,7 +10,8 @@ const authMiddleware = require("./middleware/authMiddleware");
 const app = express();
 app.use(express.json());
 
-app.use(cors());
+//primeiro passo para ligar o front com o backend, faz requisições entre serves.
+app.use(cors(/*link do server do frontend*/));
 
 app.get("/", (req, res) => {
   res.status(200).json({ message: "OK" });

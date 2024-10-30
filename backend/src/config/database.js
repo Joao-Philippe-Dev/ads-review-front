@@ -5,6 +5,8 @@ class Database {
     this.init();
   }
 
+
+   // configura a conexão do banco - não starta a caralha do banco
   init() {
     this.db = new Sequelize({
       database: "exemplo",
